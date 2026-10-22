@@ -1,0 +1,7 @@
+Explicación técnica
+
+El programa es un prototipo de registro de pedidos para Café Andromeda. Solicita el nombre o ID del producto y la cantidad, calcula el subtotal con un precio simulado de $25.00 (porque en esta fase no se contempla la base de datos) y lo suma al total de la venta. Al final imprime un ticket con el detalle de los productos y el total a pagar.
+
+Utilicé un ciclo while True para registrar varios productos, while anidados con if/else para validar que el nombre no esté vacío y que la cantidad sea mayor que cero, y un acumulador (+=) para el total.
+
+Durante el debugging corregí que el total solo copiaba el subtotal en lugar de acumularse, y moví la pregunta de continuar después del cálculo para no perder el último producto. También detecté que escribir letras en la cantidad cierra el programa, una limitación que se resolverá al aprender manejo de errores.
