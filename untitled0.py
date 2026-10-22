@@ -19,9 +19,16 @@ while True:
             break
 
     # Validacion de cantidad
-    cantidad = int(input("Escriba la cantidad de su producto: "))
-    while cantidad <= 0:
+    while True:
+       #Debugging basico 
+        try:
+    
+        cantidad = int(input("Escriba la cantidad de su producto: "))
+        while cantidad <= 0:
+            break
+            
         print("Error! Escriba al menos uno")
+        except
         cantidad = int(input("Escriba la cantidad de su producto: "))
 
     # Operaciones de cuenta
